@@ -1,116 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Randhawa Health & Supplement Hub</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<title>Randhawa Health & Supplement Hub</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #000000, #001f1f);
-      color: white;
-      text-align: center;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
 
-    header {
-      padding: 30px 15px;
-      background: #000;
-      box-shadow: 0 0 20px #00ffcc;
-    }
+.container {
+  max-width: 420px;
+  margin: auto;
+  padding: 15px;
+}
 
-    h1 {
-      color: #00ffcc;
-      margin-bottom: 10px;
-    }
+h1 {
+  color: #00ffd5;
+  margin-bottom: 5px;
+}
 
-    p {
-      max-width: 700px;
-      margin: 10px auto;
-      line-height: 1.6;
-      color: #ddd;
-    }
+.subtitle {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 15px;
+}
 
-    .image-box img {
-      max-width: 95%;
-      border-radius: 15px;
-      margin: 20px 0;
-      box-shadow: 0 0 25px #00ffcc;
-    }
+/* IMAGE SLIDER */
+.slider {
+  width: 100%;
+  max-width: 320px;
+  margin: 20px auto;
+}
 
-    .buttons {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      max-width: 320px;
-      margin: 20px auto 50px;
-    }
+.slide {
+  width: 100%;
+  display: none;
+  border-radius: 15px;
+}
 
-    .buttons a {
-      text-decoration: none;
-      padding: 15px;
-      background: #00ffcc;
-      color: #000;
-      border-radius: 30px;
-      font-weight: bold;
-      box-shadow: 0 0 15px #00ffcc;
-      transition: 0.3s;
-    }
+.active {
+  display: block;
+}
 
-    .buttons a:hover {
-      background: #00ccaa;
-      box-shadow: 0 0 25px #00ffcc;
-    }
+/* BUTTONS */
+.btn {
+  display: block;
+  background: #00ffd5;
+  color: #000;
+  text-decoration: none;
+  padding: 14px;
+  margin: 12px 0;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
 
-    footer {
-      padding: 20px;
-      font-size: 12px;
-      color: #aaa;
-    }
-  </style>
+.btn:hover {
+  background: #00c2a5;
+}
+</style>
 </head>
 
 <body>
 
-  <header>
-    <h1>Randhawa Health & Supplement Hub</h1>
-    <p>Trusted Fitness, Weight Loss & Wellness Products – One Global Platform</p>
-  </header>
+<div class="container">
 
-  <div class="image-box">
-    <img src="https://raw.githubusercontent.com/komalsingh963422-collab/randhawapay/main/FB_IMG_1769488925318.jpg" 
-         alt="Health & Fitness Banner">
+  <h1>Randhawa Health & Supplement Hub</h1>
+  <div class="subtitle">
+    Trusted Global Health, Fitness & Wellness Products — One Platform
+  </div>
+
+  <!-- IMAGE SLIDER -->
+  <div class="slider">
+    <img src="images/FB_IMG_1769488990426.jpg" class="slide active">
+    <img src="images/FB_IMG_1769488925318.jpg" class="slide">
   </div>
 
   <p>
-    Welcome to Randhawa Health & Supplement Hub.  
-    Here you’ll find premium international health, fitness, and wellness solutions
-    trusted by thousands worldwide. Choose the product that matches your goal and
-    start your transformation today.
+    Welcome to Randhawa Health & Supplement Hub. Choose your health goal and start your transformation today.
   </p>
 
-  <div class="buttons">
-    <a href="https://leanbliss24.com/text.php#aff=Randhawa5911" target="_blank">
-      🔥 Weight Loss – LeanBliss
-    </a>
+  <!-- BUTTONS -->
+  <a class="btn" href="https://getfsugarpro.com/dtc#aff=Randhawa5911" target="_blank">
+    🔥 Blood Sugar Support – FSugarPro
+  </a>
 
-    <a href="https://www.advancedbionutritionals.com/DS24/Collagen/This-Simple-10-Second-Kitchen-Test/HD.htm#aff=Randhawa5911" target="_blank">
-      💪 Collagen & Joint Support
-    </a>
+  <a class="btn" href="https://leanbliss24.com/text.php#aff=Randhawa5911" target="_blank">
+    🔥 Weight Loss – LeanBliss
+  </a>
 
-    <a href="https://getfsugarpro.com/dtc#aff=Randhawa5911" target="_blank">
-      🩸 Blood Sugar Support – FSugarPro
-    </a>
+  <a class="btn" href="https://www.advancedbionutritionals.com/DS24/Collagen/This-Simple-10-Second-Kitchen-Test/HD.htm#aff=Randhawa5911" target="_blank">
+    💪 Collagen & Joint Support
+  </a>
 
-    <a href="https://dentalsugarhack.vip/discovery#aff=Randhawa5911" target="_blank">
-      😁 Dental Health Solution
-    </a>
-  </div>
+  <a class="btn" href="https://dentalsugarhack.vip/discovery#aff=Randhawa5911" target="_blank">
+    😁 Dental Health Solution
+  </a>
 
-  <footer>
-    © 2026 Randhawa Health & Supplement Hub | Global Wellness Platform
-  </footer>
+</div>
+
+<script>
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+
+setInterval(() => {
+  slides[index].classList.remove("active");
+  index = (index + 1) % slides.length;
+  slides[index].classList.add("active");
+}, 3000);
+</script>
 
 </body>
 </html>
