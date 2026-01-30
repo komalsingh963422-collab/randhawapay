@@ -1,120 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Randhawa Health & Supplement Hub</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <title>Randhawa Health & Supplement Hub | Global Wellness Network</title>
+  <meta name="description" content="Global Health Solutions | Trusted Wellness Products Across USA, UK, Europe, Canada & Worldwide" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #000;
-  color: #fff;
-  text-align: center;
-}
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f2f5f9;
+      color: #222;
+    }
 
-.container {
-  max-width: 420px;
-  margin: auto;
-  padding: 15px;
-}
+    /* HERO */
+    .hero {
+      background: url("images/hero.jpg") center/cover no-repeat;
+      min-height: 320px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 40px 20px;
+    }
 
-h1 {
-  color: #00ffd5;
-  margin-bottom: 5px;
-}
+    .hero-box {
+      background: rgba(0,0,0,0.55);
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 700px;
+    }
 
-.subtitle {
-  font-size: 14px;
-  opacity: 0.8;
-  margin-bottom: 15px;
-}
+    .hero h1 {
+      margin: 0;
+      font-size: 30px;
+    }
 
-/* SLIDER */
-.slider {
-  width: 100%;
-  max-width: 320px;
-  margin: 15px auto;
-}
+    .hero p {
+      margin-top: 10px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
 
-.slide {
-  width: 100%;
-  display: none;
-  border-radius: 15px;
-}
+    /* SECTION BOX */
+    .section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 25px;
+    }
 
-.active {
-  display: block;
-}
+    .info-box {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      margin-bottom: 25px;
+    }
 
-/* BUTTONS */
-.btn {
-  display: block;
-  background: #00ffd5;
-  color: #000;
-  text-decoration: none;
-  padding: 14px;
-  margin: 12px 0;
-  border-radius: 30px;
-  font-weight: bold;
-  transition: 0.3s;
-}
+    .info-box h2 {
+      margin: 0;
+      color: #0a7c6b;
+    }
 
-.btn:hover {
-  background: #00c2a5;
-}
-</style>
+    .info-box p {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    /* GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+      flex-grow: 1;
+      text-align: center;
+    }
+
+    .card-content h3 {
+      margin: 10px 0 8px;
+      color: #111;
+    }
+
+    .card-content p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .btn {
+      display: block;
+      margin: 15px;
+      padding: 12px;
+      background: #1e88ff;
+      color: white;
+      text-align: center;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: #0f5ec2;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #0b0b0b;
+      color: #ddd;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 13px;
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="container">
-
-  <h1>Randhawa Health & Supplement Hub</h1>
-  <div class="subtitle">
-    Trusted Global Health, Fitness & Wellness Products — One Platform
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-box">
+      <h1>Randhawa Health & Supplement Hub</h1>
+      <p>
+        Global Health Solutions | Trusted Wellness Products Across USA, UK, Europe,
+        Canada & Worldwide
+      </p>
+    </div>
   </div>
 
-  <!-- IMAGE SLIDER -->
-  <div class="slider">
-    <img src="images/FB_IMG_1769488990426.jpg" class="slide active" alt="Fitness Image 1">
-    <img src="images/FB_IMG_1769488925318.jpg" class="slide" alt="Fitness Image 2">
+  <!-- INFO -->
+  <div class="section">
+    <div class="info-box">
+      <h2>🌍 Premium Global Health Marketplace</h2>
+      <p>
+        Carefully selected wellness and fitness solutions designed to help
+        customers achieve better health worldwide.
+        <br><br>
+        <strong>100% Secure | Fast Access | Global Support</strong>
+      </p>
+    </div>
+
+    <!-- PRODUCTS GRID -->
+    <div class="grid">
+
+      <!-- LeanBliss -->
+      <div class="card">
+        <img src="images/leanbliss.jpg" alt="LeanBliss 24">
+        <div class="card-content">
+          <h3>LeanBliss 24</h3>
+          <p>Advanced natural fat-burning formula for healthy weight management.</p>
+        </div>
+        <a class="btn" href="https://leanbliss24.com/text.php#aff=Randhawa5911" target="_blank">BUY NOW</a>
+      </div>
+
+      <!-- Collagen -->
+      <div class="card">
+        <img src="images/collagen.jpg" alt="Advanced Collagen Plus">
+        <div class="card-content">
+          <h3>Advanced Collagen Plus</h3>
+          <p>Supports joint strength, glowing skin, stronger hair and nails.</p>
+        </div>
+        <a class="btn" href="https://www.advancedbionutritionals.com/DS24/Collagen/This-Simple-10-Second-Kitchen-Test/HD.htm#aff=Randhawa5911" target="_blank">BUY NOW</a>
+      </div>
+
+      <!-- Amino -->
+      <div class="card">
+        <img src="images/amino.jpg" alt="Advanced Amino Formula">
+        <div class="card-content">
+          <h3>Advanced Amino Formula</h3>
+          <p>Premium amino acid supplement for muscle recovery, strength and performance.</p>
+        </div>
+        <a class="btn" href="https://www.digistore24.com/redir/454003/Randhawa5911/" target="_blank">BUY NOW</a>
+      </div>
+
+      <!-- Dental -->
+      <div class="card">
+        <img src="images/dental.jpg" alt="Dental Sugar Hack">
+        <div class="card-content">
+          <h3>Dental Sugar Hack</h3>
+          <p>Advanced oral and gum health support system.</p>
+        </div>
+        <a class="btn" href="https://dentalsugarhack.vip/discovery#aff=Randhawa5911" target="_blank">BUY NOW</a>
+      </div>
+
+      <!-- F Sugar -->
+      <div class="card">
+        <img src="images/fsugar.jpg" alt="F Sugar Pro">
+        <div class="card-content">
+          <h3>F-Sugar Pro</h3>
+          <p>Supports healthy blood sugar levels and daily energy balance.</p>
+        </div>
+        <a class="btn" href="https://getfsugarpro.com/dtc#aff=Randhawa5911" target="_blank">BUY NOW</a>
+      </div>
+
+      <!-- Digistore -->
+      <div class="card">
+        <img src="images/global.jpg" alt="Wellness Special Offer">
+        <div class="card-content">
+          <h3>Wellness Special Offer</h3>
+          <p>Exclusive international health product from Digistore24.</p>
+        </div>
+        <a class="btn" href="https://www.digistore24.com/redir/563496/Randhawa5911/" target="_blank">BUY NOW</a>
+      </div>
+
+    </div>
   </div>
 
-  <p>
-    Welcome to Randhawa Health & Supplement Hub. Choose your health goal and start your transformation today.
-  </p>
-
-  <!-- BUTTONS -->
-  <a class="btn" href="https://getfsugarpro.com/dtc#aff=Randhawa5911" target="_blank">
-    🔥 Blood Sugar Support – FSugarPro
-  </a>
-
-  <a class="btn" href="https://leanbliss24.com/text.php#aff=Randhawa5911" target="_blank">
-    🔥 Weight Loss – LeanBliss
-  </a>
-
-  <a class="btn" href="https://www.advancedbionutritionals.com/DS24/Collagen/This-Simple-10-Second-Kitchen-Test/HD.htm#aff=Randhawa5911" target="_blank">
-    💪 Collagen & Joint Support
-  </a>
-
-  <a class="btn" href="https://dentalsugarhack.vip/discovery#aff=Randhawa5911" target="_blank">
-    😁 Dental Health Solution
-  </a>
-
-</div>
-
-<script>
-let slides = document.querySelectorAll(".slide");
-let index = 0;
-
-setInterval(() => {
-  slides[index].classList.remove("active");
-  index = (index + 1) % slides.length;
-  slides[index].classList.add("active");
-}, 3000);
-</script>
+  <!-- FOOTER -->
+  <footer>
+    📱 WhatsApp: +91-7017287334 | Telegram: @Internationalcrawd <br>
+    📧 Email: komalsingh963422@gmail.com <br><br>
+    © 2026 Randhawa Health & Supplement Hub | Global Wellness Network
+  </footer>
 
 </body>
 </html>
