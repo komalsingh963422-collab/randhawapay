@@ -1,43 +1,219 @@
-<!-- HERO SECTION WITH PHOTO BACKGROUND -->
-<section class="hero">
-  <div class="hero-overlay">
-    <h1>Randhawa Health & Supplement Hub</h1>
-    <p>
-      Global Health Solutions | Trusted Wellness Products Across USA, UK, Europe,
-      Canada & Worldwide
-    </p>
-  </div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Randhawa Health & Supplement Hub</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-.hero {
-  width: 100%;
-  min-height: 70vh;
-  background: url("https://images.unsplash.com/photo-1599058917212-d750089bc07c?auto=format&fit=crop&w=1500&q=80");
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  margin: 0;
+}
+
+header {
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+  url("https://i.ibb.co/3mqnjm0b/FB-IMG-1769488925318.jpg");
   background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero-overlay {
-  background: rgba(0, 0, 0, 0.6);
-  padding: 40px 20px;
-  border-radius: 16px;
-  text-align: center;
-  max-width: 800px;
-}
-
-.hero-overlay h1 {
+  background-position: center top;
   color: white;
-  font-size: 2.2rem;
-  margin-bottom: 15px;
+  padding: 140px 20px;
+  text-align: center;
 }
 
-.hero-overlay p {
-  color: #f1f1f1;
-  font-size: 1.1rem;
-  line-height: 1.6;
+header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 16px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.hero {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  margin-bottom: 25px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  background: #fff;
+}
+
+.card-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-content h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: #555;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 12px 20px;
+  background: #0a7cff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+footer {
+  background: #111;
+  color: white;
+  padding: 25px;
+  text-align: center;
+  margin-top: 40px;
 }
 </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Randhawa Health & Supplement Hub</h1>
+  <p>Global Health Solutions | Trusted Wellness Products Across USA, UK, Europe, Canada & Worldwide</p>
+</header>
+
+<div class="container">
+
+  <div class="hero">
+    <h2>🌍 Premium Global Health Marketplace</h2>
+    <p>Carefully selected wellness and fitness solutions designed to help customers achieve better health worldwide.</p>
+    <b>100% Secure | Fast Access | Global Support</b>
+  </div>
+
+  <div class="products">
+
+    <!-- 1 -->
+    <div class="card">
+      <img src="https://i.ibb.co/8LpjzVNQ/1769675374126.jpg" alt="LeanBliss 24">
+      <div class="card-content">
+        <h2>LeanBliss 24</h2>
+        <p>Advanced natural fat-burning formula for healthy weight management.</p>
+        <a class="btn" href="https://leanbliss24.com/text.php#aff=Randhawa5911" target="_blank">BUY NOW</a>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="card">
+      <img src="https://i.ibb.co/h1HDb1WY/1769675399481.jpg" alt="Advanced Collagen Plus">
+      <div class="card-content">
+        <h2>Advanced Collagen Plus</h2>
+        <p>Supports joint strength, glowing skin, stronger hair and nails.</p>
+        <a class="btn" href="https://www.advancedbionutritionals.com/DS24/Collagen/This-Simple-10-Second-Kitchen-Test/HD.htm#aff=Randhawa5911" target="_blank">BUY NOW</a>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="card">
+      <img src="https://i.ibb.co/fGC0jXFC/1769675440276.jpg" alt="Advanced Amino Formula">
+      <div class="card-content">
+        <h2>Advanced Amino Formula</h2>
+        <p>Premium amino acid supplement for muscle recovery, strength and performance.</p>
+        <a class="btn" href="https://www.digistore24.com/redir/454003/Randhawa5911/" target="_blank">BUY NOW</a>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="card">
+      <img src="https://i.ibb.co/YKP8K8w/1769675468244.jpg" alt="Dental Sugar Hack">
+      <div class="card-content">
+        <h2>Dental Sugar Hack</h2>
+        <p>Advanced oral and gum health support system.</p>
+        <a class="btn" href="https://dentalsugarhack.vip/discovery#aff=Randhawa5911" target="_blank">BUY NOW</a>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="card">
+      <img src="https://via.placeholder.com/300x220?text=FSugarPro" alt="F-Sugar Pro">
+      <div class="card-content">
+        <h2>F-Sugar Pro</h2>
+        <p>Supports healthy blood sugar levels and daily energy balance.</p>
+        <a class="btn" href="https://getfsugarpro.com/dtc#aff=Randhawa5911" target="_blank">BUY NOW</a>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="card">
+      <img src="https://via.placeholder.com/300x220?text=Digistore+Offer+1" alt="Digistore Offer 1">
+      <div class="card-content">
+        <h2>Wellness Special Offer</h2>
+        <p>Exclusive international health product from Digistore24.</p>
+        <a class="btn" href="https://www.digistore24.com/redir/563496/Randhawa5911/" target="_blank">BUY NOW</a>
+      </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="card">
+      <img src="https://via.placeholder.com/300x220?text=Digistore+Offer+2" alt="Digistore Offer 2">
+      <div class="card-content">
+        <h2>Global Fitness Solution</h2>
+        <p>High-demand international fitness & wellness product.</p>
+        <a class="btn" href="https://www.digistore24.com/redir/583901/Randhawa5911/" target="_blank">BUY NOW</a>
+      </div>
+    </div>
+
+    <!-- 8 -->
+    <div class="card">
+      <img src="https://via.placeholder.com/300x220?text=Digistore+Offer+3" alt="Digistore Offer 3">
+      <div class="card-content">
+        <h2>Premium Health Program</h2>
+        <p>Complete wellness system for international customers.</p>
+        <a class="btn" href="https://www.digistore24.com/redir/410869/Randhawa5911/" target="_blank">BUY NOW</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <p>📲 WhatsApp: +91-7017287334 | Telegram: @Internationalcrawd</p>
+  <p>📧 Email: komalsingh963422@gmail.com</p>
+  <p>© 2026 Randhawa Health & Supplement Hub | Global Wellness Network</p>
+</footer>
+
+</body>
+</html>
